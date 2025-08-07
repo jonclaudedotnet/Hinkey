@@ -1,0 +1,27 @@
+{
+  "sync_config": {
+    "version": "1.0",
+    "last_sync": "",
+    "nodes": [
+      {
+        "name": "primary",
+        "host": "LAPTOP-K3P5APKO",
+        "kb_path": "/home/jonclaude/agents/Hinkey",
+        "sync_method": "git",
+        "repo_url": "https://github.com/jonclaudedotnet/Hinkey.git"
+      }
+    ],
+    "sync_schedule": "*/5 * * * *",
+    "exclude_patterns": [
+      "*.db",
+      "*.log",
+      "*.mp4",
+      "*.wav",
+      "node_modules/"
+    ],
+    "sync_commands": {
+      "pre_sync": "git fetch origin",
+      "post_sync": "git reset --hard origin/main"
+    }
+  }
+}
