@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-07-23T04:35:23.552756",
+  "os_release": "Fedora release 42 (Adams)",
+  "kernel": "6.15.7-200.fc42.x86_64",
+  "architecture": "x86_64",
+  "hostname": "LAPTOP-K3P5APKO.localdomain",
+  "uptime": "up 48 minutes",
+  "cpu_info": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           39 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  8\nOn-line CPU(s) list:                     0-7\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz\nCPU family:                              6\nModel:                                   60\nThread(s) per core:                      2\nCore(s) per socket:                      4\nSocket(s):                               1\nStepping:                                3\nCPU(s) scaling MHz:                      97%",
+  "memory": "total        used        free      shared  buff/cache   available\nMem:            15Gi       2.9Gi       9.7Gi        93Mi       3.1Gi        12Gi\nSwap:          8.0Gi          0B       8.0Gi",
+  "disk_space": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/sda3       465G  9.0G  454G   2% /",
+  "graphics": "00:02.0 VGA compatible controller: Intel Corporation Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics Controller (rev 06)\n01:00.0 VGA compatible controller: NVIDIA Corporation GP104 [GeForce GTX 1070] (rev a1)",
+  "audio_devices": "63\talsa_output.pci-0000_00_03.0.hdmi-stereo.monitor\tPipeWire\ts32le 2ch 48000Hz\tSUSPENDED",
+  "network": "default via 10.0.0.1 dev enp3s0 proto dhcp src 10.0.0.200 metric 100 \n10.0.0.0/24 dev enp3s0 proto kernel scope link src 10.0.0.200 metric 100",
+  "python_version": "Python 3.13.5",
+  "installed_packages": {
+    "gtk": "gtk3-3.24.49-2.fc42.x86_64",
+    "sqlite": "package sqlite is not installed",
+    "git": ""
+  },
+  "display_info": "HDMI-A-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 476mm x 267mm\nHDMI-A-2 connected 1920x1080+0+1080 (normal left inverted right x axis y axis) 528mm x 310mm",
+  "current_user": "jonclaude",
+  "working_directory": "/home/jonclaude/agents/Hinkey",
+  "environment": {
+    "PATH": "/home/jonclaude/.local/bin:/home/jonclaude/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin",
+    "DISPLAY": ":0"
+  }
+}

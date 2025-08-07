@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Dolores Control Panel
+Comment=AI Podcast Host Control Panel
+Exec=/home/jonclaude/agents/Hinkey/start_dolores_control_panel.sh
+Icon=applications-multimedia
+Terminal=false
+Categories=AudioVideo;Audio;
+StartupNotify=true
+Path=/home/jonclaude/agents/Hinkey

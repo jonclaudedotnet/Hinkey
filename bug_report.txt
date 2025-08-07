@@ -1,0 +1,25 @@
+BUG REPORT: SMB Ingestion Issues
+
+IDENTIFIED BUGS:
+
+1. PARSING BUG (Critical):
+   - list_files() expects 8 parts after split(maxsplit=7)
+   - But SMB output has variable whitespace
+   - Example: "ApplePhotos26                      DA        0  Fri Jun 13 00:40:00 2025"
+   - This causes NO files to be found
+
+2. RECURSION BUG:
+   - scan_share() recursively scans subdirs BEFORE processing files
+   - Creates deep recursion stack before finding any files
+   - ThreadPoolExecutor created at each recursion level
+
+3. PROGRESS BUG:
+   - write_status() called but stats['files_found'] never increments
+   - Because parsing fails, no files are added to stats
+
+IMMEDIATE FIX NEEDED:
+- Rewrite SMB output parser to handle variable whitespace
+- Use iterative directory scanning instead of recursion
+- Single ThreadPoolExecutor for all file processing
+
+Waiting for team review and recommendations...

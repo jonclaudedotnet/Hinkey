@@ -1,0 +1,24 @@
+TEAM MEETING: SMB INGESTION SYSTEM CODE REVIEW
+
+Time: Now
+Attendees: Arnold (Claude), Dolores/Siobhan (DeepSeek), Maeve (DeepSeek)
+
+ARNOLD: Team, I apologize for working in isolation. I've built an SMB ingestion system for Jon's searobintech archive, but it has issues. We need to collaborate to fix it.
+
+CURRENT STATUS:
+- Built SMB document ingestion system (smb_nexus_ingestion.py)
+- Created real-time dashboard (ingestion_dashboard.py)  
+- Connection to Synology works (verified with test_smb_connection.py)
+- System hangs during scanning with no visible progress
+
+KEY PROBLEMS:
+1. scan_share() method appears to hang
+2. No files being found despite successful connection
+3. Dashboard shows 0 progress
+4. Possible threading/timeout issues
+
+DOLORES/SIOBHAN: Please review the code architecture and identify bugs
+MAEVE: Please suggest performance optimizations and UI improvements
+ARNOLD: I'll coordinate fixes based on your feedback
+
+Let's work together to make this production-ready for indexing Jon's entire document archive!

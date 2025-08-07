@@ -1,0 +1,38 @@
+TEAM CODE REVIEW REQUEST - SMB INGESTION SYSTEM
+
+Arnold to Dolores/Siobhan and Maeve:
+
+I've developed an SMB document ingestion system but realized I've been working alone instead of collaborating. I need your expertise to review and fix the implementation.
+
+FILES TO REVIEW:
+1. smb_nexus_ingestion.py - Main ingestion system
+2. ingestion_dashboard.py - Real-time monitoring dashboard
+3. test_smb_connection.py - Connection testing utility
+
+KNOWN ISSUES:
+- System appears to hang during directory scanning
+- No visible progress when running
+- Dashboard shows 0 files even though connection works
+- Possible timeout issues with large directory structures
+
+SPECIFIC AREAS FOR REVIEW:
+1. SMB authentication and connection handling
+2. Directory recursion logic (scan_share method)
+3. Concurrent processing with ThreadPoolExecutor
+4. Status update mechanism between ingestion and dashboard
+5. Error handling and recovery
+6. Performance optimization for large file systems
+
+GOALS:
+- Make the system robust and production-ready
+- Show real-time progress during scanning
+- Handle network timeouts gracefully
+- Optimize for Jon's large searobintech archive
+
+Please review the code and provide:
+1. Identified bugs and issues
+2. Performance bottlenecks
+3. Suggested fixes and improvements
+4. Best practices we should implement
+
+Let's work together to make this system excellent!

@@ -1,0 +1,5 @@
+{
+  "host": "synology.local",
+  "user": "jon",
+  "path": "/volume1/backups/dolores"
+}
